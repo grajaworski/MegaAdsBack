@@ -16,7 +16,7 @@ app.use(rateLimit({
     max: 100, // Limit each IP to 100 request per 'window' (here, per 15 minutes).
 }))
 
-app.use('/ad', adRouter);
+app.use('/api/ad', adRouter);
 
 app.use(handleError);
 
